@@ -54,8 +54,9 @@ function App() {
           <Route path="/*">
           <NotFound></NotFound>
           </Route>
-          <Footer></Footer>
+          
         </Switch>
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );

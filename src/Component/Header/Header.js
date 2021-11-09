@@ -14,22 +14,22 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <div className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <Link className="fw-bold mx-2 text-decoration-none" to="/home">HOME</Link>
-            <Link className="fw-bold mx-2 text-decoration-none" to="/blog">BLOG</Link>
-            <Link className="fw-bold mx-2 text-decoration-none" to="/manage">MANAGES</Link>
+            <Link className="fw-bold mx-2 text-white text-decoration-none" to="/home">HOME</Link>
+            <Link className="fw-bold mx-2 text-white text-decoration-none" to="/blog">BLOG</Link>
+            <Link className="fw-bold mx-2 text-white text-decoration-none" to="/manage">MANAGES</Link>
           </div>
           <div className="d-flex">
             {
               user?.email ?
                 <div>
-                  <span className="navbar-text fw-bold text-white bg-success p-2 rounded-pill">
-                    {/* PROFILE NAME */}
+                  <span className="navbar-text fw-bold text-white bg-secondary p-2 rounded-pill">
+                    
                     {user?.displayName}
                   </span>
-                  <button onClick={logOut} type="submit" className="btn btn-outline-success text-white fw-bold mx-1"><i className="fas fa-sign-out-alt"></i> LOG OUT</button>
+                  <button onClick={logOut} type="submit" className="btn btn-warning text-white fw-bold mx-1"><i className="fas fa-sign-out-alt"></i> LOG OUT</button>
                 </div>
                 :
-                <Link to="/login"><button type="submit" className="btn btn-outline-success text-white fw-bold mx-1"><i className="fas fa-sign-in-alt"></i> LOG IN</button></Link>
+                <Link to="/login"><button type="submit" className="btn btn-secondary text-white fw-bold mx-1"><i className="fas fa-sign-in-alt"></i> LOG IN</button></Link>
             }
 
           </div>
