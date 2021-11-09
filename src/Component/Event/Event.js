@@ -13,7 +13,7 @@ const Event = () => {
         const description = descriptionRef.current.value;
 
         const newBlog = { title, img, description, location };
-        fetch('https://https://https://ghastly-citadel-19785.herokuapp.com///event', {
+        fetch('https://quiet-ravine-89740.herokuapp.com/event', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

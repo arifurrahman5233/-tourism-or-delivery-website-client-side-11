@@ -7,7 +7,7 @@ const ManageTask = () => {
     const [items, setItem] = useState([]);
 
     useEffect(() => {
-        const url = 'https://https://https://ghastly-citadel-19785.herokuapp.com///join';
+        const url = 'https://quiet-ravine-89740.herokuapp.com/join';
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -17,7 +17,7 @@ const ManageTask = () => {
     const handleDeleteJoin = id => {
         const proceed = window.confirm('Are you sure, you want to delete ?');
         if (proceed) {
-            const url = `https://https://https://ghastly-citadel-19785.herokuapp.com///join/${id}`;
+            const url = `https://quiet-ravine-89740.herokuapp.com/join/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

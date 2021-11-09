@@ -6,7 +6,7 @@ const UpdateEvent = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        const url = `https://https://https://ghastly-citadel-19785.herokuapp.com///event/${id}`;
+        const url = `https://quiet-ravine-89740.herokuapp.com/event/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -38,7 +38,7 @@ const UpdateEvent = () => {
     }
 
     const handleUpdateBlog = e => {
-        const url = `https://https://https://ghastly-citadel-19785.herokuapp.com///event/${id}`;
+        const url = `https://quiet-ravine-89740.herokuapp.com/event/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

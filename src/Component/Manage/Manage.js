@@ -5,7 +5,7 @@ const Manage = () => {
     const [blogs, setBlog] = useState([]);
     const [items, setItem] = useState([]);
     useEffect(() => {
-        const url = 'https://https://https://ghastly-citadel-19785.herokuapp.com///event';
+        const url = 'https://quiet-ravine-89740.herokuapp.com/event';
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
@@ -15,7 +15,7 @@ const Manage = () => {
     const handleDeleteBlog = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `https://https://https://ghastly-citadel-19785.herokuapp.com///event/${id}`;
+            const url = `https://quiet-ravine-89740.herokuapp.com/event/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

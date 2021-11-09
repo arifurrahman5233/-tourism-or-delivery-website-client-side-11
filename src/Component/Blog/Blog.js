@@ -5,12 +5,12 @@ const Blog = () => {
     const [blogs, setBlog] = useState([]);
 
     useEffect(() => {
-        const url = 'https://https://https://ghastly-citadel-19785.herokuapp.com///event';
+        const url = 'https://quiet-ravine-89740.herokuapp.com/event';
 
         fetch(url)
             .then(res => res.json())
             .then(data => setBlog(data));
-    });
+    },[]);
     return (
         <div className="container my-5 shadow p-3">
             <h1 className="text-center">OUR BLOGS</h1>
